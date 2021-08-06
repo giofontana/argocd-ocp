@@ -1,3 +1,3 @@
 resources:
 - quay-sub.yaml
-- quay.registry.yaml
+- quay-registry.yaml
