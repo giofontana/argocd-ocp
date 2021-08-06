@@ -7,4 +7,4 @@ spec:
   placementPolicy:
     tiers:
     - backingStores:
-      - noobaa-default-backing-store
+      - noobaa-pv-backing-store

@@ -16,7 +16,7 @@ echo "Deploying Quay using Argo ..."
 oc apply -f deploy-quay.yaml
 
 TIMEOUT=0 
-status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0]}')
+status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
 while [ "$status" != "Available" ]; do
   echo "It still being deployed. Waiting one more minute..."
   sleep 60
@@ -25,7 +25,7 @@ while [ "$status" != "Available" ]; do
     exit 1
   fi
   TIMEOUT=$(($TIMEOUT+1))
-  status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0]}')
+  status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
 done
 
 echo "Deployment Finished"
