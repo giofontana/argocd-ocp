@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: 'https://github.com/giofontana/argocd-ocp.git'
-    path: crd/argocd/acm
+    path: quay
     targetRevision: HEAD
   destination:
     server: 'https://kubernetes.default.svc'
