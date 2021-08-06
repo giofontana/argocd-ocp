@@ -5,7 +5,7 @@
 # 
 # Pre-requisites:
 # 1. "oc" cli is already installed
-# 2. "oc" is already logged to the cluster
+# 2. "oc" is already logged to the cluster with a cluster-admin user
 # 3. ArgoCD is installed in openshift-gitops namespace
 #
 # Example of Usage:
@@ -21,6 +21,7 @@ oc create secret generic acm-pullsecret -n openshift-advanced-cluster-mgmt --fro
 rm -f pull-secret.txt
 
 echo "Deploying ACM ..."
+oc apply -f deploy-operator.yaml
 oc apply -f deploy-acm.yaml
 
 TIMEOUT=0 
