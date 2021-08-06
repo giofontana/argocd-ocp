@@ -1,0 +1,7 @@
+resources:
+- odf-namespace.yaml
+- odf-og.yaml
+- odf-sub.yaml
+- noobaa.yaml
+- noobaa-pv-backing-store.yaml
+- noobaa-default-bucket-class.yaml
