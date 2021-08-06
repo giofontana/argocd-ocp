@@ -29,8 +29,8 @@ mch_status=$(oc get MultiClusterHub multiclusterhub -n openshift-advanced-cluste
 while [ "$mch_status" != "Running" ]; do
   echo "MultiClusterHub still being deployed. Waiting one more minute..."
   sleep 60
-  if [ $TIMEOUT -gt 15 ]; then #15 MINUTES TIMEOUT
-    echo "Timeout reached... Check the status of ACM deployment on OpenShift."
+  if [ $TIMEOUT -gt 30 ]; then #30 MINUTES TIMEOUT
+    echo "Timeout reached... Check the status of the deployment on OpenShift."
     exit 1
   fi
   TIMEOUT=$(($TIMEOUT+1))

@@ -21,11 +21,13 @@ while [ "$status" != "Available" ]; do
   echo "It still being deployed. Waiting one more minute..."
   sleep 60
   if [ $TIMEOUT -gt 15 ]; then #15 MINUTES TIMEOUT
-    echo "Timeout reached... Check the status of ACM deployment on OpenShift."
+    echo "Timeout reached... Check the status of the deployment on OpenShift."
     exit 1
   fi
   TIMEOUT=$(($TIMEOUT+1))
   status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
 done
 
-echo "Deployment Finished"
+quay_endpoint=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.registryEndpoint}')
+
+echo "Deployment Finished! Quay is available at: $quay_endpoint"
