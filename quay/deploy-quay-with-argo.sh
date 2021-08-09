@@ -15,6 +15,7 @@
 echo "Deploying Quay using Argo ..."
 oc apply -f deploy-quay.yaml
 
+sleep 60
 TIMEOUT=0 
 status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
 while [ "$status" != "Available" ]; do
