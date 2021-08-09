@@ -15,6 +15,7 @@ echo "Deploying ACS ..."
 oc apply -f deploy-operator.yaml
 oc apply -f deploy-acs.yaml
 
+sleep 60
 TIMEOUT=0 
 status=$(oc get Central stackrox-central-services -n stackrox -o jsonpath='{.status.conditions[0].type}')
 while [ "$status" != "Deployed" ]; do
