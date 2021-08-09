@@ -24,6 +24,7 @@ echo "Deploying ACM ..."
 oc apply -f deploy-operator.yaml
 oc apply -f deploy-acm.yaml
 
+sleep 60
 TIMEOUT=0 
 mch_status=$(oc get MultiClusterHub multiclusterhub -n openshift-advanced-cluster-mgmt -o jsonpath='{.status.phase}')
 while [ "$mch_status" != "Running" ]; do
