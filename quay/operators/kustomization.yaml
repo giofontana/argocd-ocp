@@ -1,0 +1,5 @@
+resources:
+- odf-namespace.yaml
+- odf-og.yaml
+- odf-sub.yaml
+- quay-sub.yaml

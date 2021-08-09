@@ -13,6 +13,8 @@
 
 
 echo "Deploying Quay using Argo ..."
+oc apply -f deploy-operator.yaml
+oc apply -f deploy-noobaa.yaml
 oc apply -f deploy-quay.yaml
 
 sleep 60
