@@ -1,6 +1,6 @@
-# argocd-ocp
+# ArgoCD Manifests for OpenShift Tools
 
-This repo contains manifests to deploy the following tools on any OpenShift which has ArgoCD running.
+This repo contains manifests to deploy the following tools on any OpenShift cluster which has **ArgoCD** running.
 
 **[Advanced Cluster Management](#acm---advanced-cluster-management)**<br>
 **[Advanced Cluster Security (StackRox)](#acs---advanced-cluster-security)**<br>
