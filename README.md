@@ -65,7 +65,7 @@ This folder contains three ArgoCD manifests:
 - deploy-noobaa.yaml: This file creates the `quay-noobaa` application on ArgoCD, which is responsible to deploy `Noobaa` and a `BackingStore` using a PV to be used as the S3 backend for Quay.
 - deploy-quay.yaml: This file creates the `quay` application on ArgoCD, which is responsible to deploy the QuayRegistry instance and install Quay.
 
-To deploy ACS using it you should apply both manifests:
+To deploy Quay using it you should apply all manifests:
 
 ```
 oc apply -f ./quay/deploy-operator.yaml
