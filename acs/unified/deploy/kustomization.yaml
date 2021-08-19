@@ -1,0 +1,6 @@
+resources:
+- namespace.yaml
+- acs-central.yaml
+- init-bundle-rbac.yaml
+- init-bundle-setup-job.yaml
+- secured-cluster.yaml

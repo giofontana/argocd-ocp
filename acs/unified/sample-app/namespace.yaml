@@ -1,0 +1,6 @@
+kind: Namespace
+apiVersion: v1
+metadata:
+  name: stackrox-sample-app
+  annotations:
+    argocd.argoproj.io/sync-wave: "5"  
