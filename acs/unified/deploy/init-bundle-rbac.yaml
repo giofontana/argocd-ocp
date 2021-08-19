@@ -5,7 +5,8 @@ metadata:
   namespace: stackrox
   name: init-bundle
   annotations:
-        argocd.argoproj.io/sync-wave: "2"   
+    argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/sync-wave: "2"   
 ---
 kind: RoleBinding
 apiVersion: rbac.authorization.k8s.io/v1
@@ -13,7 +14,8 @@ metadata:
   name: init-bundle-edit
   namespace: stackrox
   annotations:
-        argocd.argoproj.io/sync-wave: "3"   
+    argocd.argoproj.io/hook: Sync
+    argocd.argoproj.io/sync-wave: "3"   
 subjects:
   - kind: ServiceAccount
     name: init-bundle

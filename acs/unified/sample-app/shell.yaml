@@ -5,6 +5,7 @@ metadata:
     app: shellshock
     team: test-team
   annotations:
+    argocd.argoproj.io/hook: Sync  
     argocd.argoproj.io/sync-wave: "5"      
   name: shell
   namespace: stackrox-sample-app

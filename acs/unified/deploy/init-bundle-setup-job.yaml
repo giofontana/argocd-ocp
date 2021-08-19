@@ -3,6 +3,7 @@ kind: Job
 metadata:
   annotations:
         argocd.argoproj.io/sync-wave: "4" 
+        argocd.argoproj.io/hook-delete-policy: HookSucceeded
   labels:
     run: init-bundle-setup-job
   name: init-bundle-setup-job

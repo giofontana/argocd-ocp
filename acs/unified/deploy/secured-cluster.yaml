@@ -4,6 +4,7 @@ metadata:
   name: stackrox-secured-cluster-services
   namespace: stackrox
   annotations:
+    argocd.argoproj.io/hook: Sync  
     argocd.argoproj.io/sync-wave: "5"  
 spec:
   admissionControl:
