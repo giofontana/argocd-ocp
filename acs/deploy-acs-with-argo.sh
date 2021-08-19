@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Parameters
-# 1. PULL SECRET
 # 
 # Pre-requisites:
 # 1. "oc" cli is already installed
