@@ -1,4 +1,2 @@
 bases:
-- operator
-- deploy
-- sample-app
+- operator/acs-sub.yaml
