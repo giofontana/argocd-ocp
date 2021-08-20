@@ -1,4 +1,4 @@
-resources:
+bases:
 - operator
 - deploy
 - sample-app
