@@ -1,5 +1,0 @@
-resources:
-- namespace.yaml
-- sample-app-rbac.yaml
-- samba.yaml
-- shell.yaml
