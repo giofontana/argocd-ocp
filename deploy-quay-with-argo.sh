@@ -13,4 +13,4 @@
 
 
 echo "Deploying Quay using ArgoCD..."
-./argo-app-runner.sh stackrox 'https://github.com/giofontana/argocd-ocp.git' 'quay/gitops' acm
+./argo-app-runner.sh quay 'https://github.com/giofontana/argocd-ocp.git' 'quay/gitops' HEAD
