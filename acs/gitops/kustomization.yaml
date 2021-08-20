@@ -1,2 +1,4 @@
 resources:
-- operator/acs-sub.yaml
+- operator
+- deploy
+- sample-app
