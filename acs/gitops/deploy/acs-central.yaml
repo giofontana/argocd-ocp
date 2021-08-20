@@ -4,7 +4,9 @@ metadata:
   name: stackrox-central-services
   namespace: stackrox
   annotations:
+    argocd.argoproj.io/hook: Sync
     argocd.argoproj.io/sync-wave: "1"  
+    argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
 spec:
   central:
     exposure:
