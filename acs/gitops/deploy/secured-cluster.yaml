@@ -3,8 +3,7 @@ kind: SecuredCluster
 metadata:
   name: stackrox-secured-cluster-services
   namespace: stackrox
-  annotations:
-    argocd.argoproj.io/hook: Sync  
+  annotations: 
     argocd.argoproj.io/sync-wave: "3"  
 spec:
   admissionControl:
