@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# Parameters
+# 1. PULL SECRET
 # 
 # Pre-requisites:
 # 1. "oc" cli is already installed
@@ -7,7 +9,8 @@
 # 3. ArgoCD is installed in openshift-gitops namespace
 #
 # Example of Usage:
-# ./deploy-acs-with-argo.sh
+# ./deploy-quay-with-argo.sh
 
-echo "Deploying ACS using ArgoCD..."
-./argo-app-runner.sh stackrox 'https://github.com/giofontana/argocd-ocp.git' 'acs/gitops' HEAD
+
+echo "Deploying Quay using ArgoCD..."
+./argo-app-runner.sh stackrox 'https://github.com/giofontana/argocd-ocp.git' 'quay/gitops' acm
