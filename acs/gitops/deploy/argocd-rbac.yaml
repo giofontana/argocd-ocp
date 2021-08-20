@@ -5,6 +5,7 @@ metadata:
   namespace: stackrox
   name: argocd
   annotations:
+    argocd.argoproj.io/hook: Sync  
     argocd.argoproj.io/sync-wave: "1"   
 ---
 kind: RoleBinding
