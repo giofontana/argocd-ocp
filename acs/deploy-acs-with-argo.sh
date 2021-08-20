@@ -10,7 +10,6 @@
 # ./deploy-acs-with-argo.sh
 
 echo "Deploying ACS ..."
-oc apply -f deploy-operator.yaml
 oc apply -f deploy-acs.yaml
 
 sleep 60
