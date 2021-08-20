@@ -1,0 +1,6 @@
+resources:
+- acm-og.yaml
+- acm-sub.yaml
+- argocd-rbac.yaml
+- namespace.yaml
+- pull-secret-job.yaml
