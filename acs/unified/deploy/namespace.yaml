@@ -1,7 +1,0 @@
-kind: Namespace
-apiVersion: v1
-metadata:
-  name: stackrox
-  annotations:
-    argocd.argoproj.io/hook: PreSync  
-    argocd.argoproj.io/sync-wave: "2"  
