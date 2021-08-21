@@ -24,7 +24,7 @@ spec:
               echo "Waiting quay deployment..."
               sleep 10
               TIMEOUT=0 
-              status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
+              status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}' || true)
               while [ "$status" != "Available" ]; do
                 echo "It is still being deployed. Waiting one more minute..."
                 sleep 60
@@ -33,7 +33,7 @@ spec:
                   exit 1
                 fi
                 TIMEOUT=$(($TIMEOUT+1))
-                status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}')
+                status=$(oc get quayregistry quay-registry -n openshift-operators -o jsonpath='{.status.conditions[0].type}' || true)
               done
 
               echo "Quay deployment finished!"
