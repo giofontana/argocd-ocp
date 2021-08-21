@@ -36,6 +36,7 @@ spec:
   syncPolicy:
     automated:
       prune: true
+      selfHeal: true
 EOF
 
 echo "Waiting for application $app_name to be 'Succeeded' on ArgoCD (timeout $timeout mins)"
