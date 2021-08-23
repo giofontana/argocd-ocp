@@ -14,7 +14,7 @@ To use the manifests here with ArgoCD follow the instructions below. Keep in min
 oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller
 ```
 
-> **_NOTE:_** To use the bash scripts you should login to the cluster with a cluster-admin user and also have ArgoCD installed on openshift-gitops namespace.
+> **_NOTE:_** To use the bash scripts you should login to the cluster with a cluster-admin user and also have ArgoCD installed and running on openshift-gitops namespace.
 
 ----
 
