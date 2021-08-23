@@ -8,7 +8,7 @@ metadata:
   labels:
     run: noobaa-wait-job
   name: noobaa-wait-job
-  namespace: openshift-operators
+  namespace: openshift-storage
 spec:
   template:
     spec:
