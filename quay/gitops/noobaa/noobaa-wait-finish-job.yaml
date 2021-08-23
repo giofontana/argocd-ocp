@@ -45,8 +45,8 @@ spec:
           name: noobaa-wait-job
       dnsPolicy: ClusterFirst
       restartPolicy: Never
-      serviceAccount: default
-      serviceAccountName: default
+      serviceAccount: noobaa
+      serviceAccountName: noobaa
       terminationGracePeriodSeconds: 30
 
       
