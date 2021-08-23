@@ -32,4 +32,4 @@ export ROX_CENTRAL_ADDRESS="$acs_central_url:443"
   --output-secrets cluster_init_bundle.yaml
 
 oc apply -f cluster_init_bundle.yaml -n stackrox
-oc apply -f deploy/secured-cluster.yaml -n stackrox
+oc apply -f gitops/deploy/secured-cluster.yaml -n stackrox
