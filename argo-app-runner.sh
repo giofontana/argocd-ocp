@@ -14,7 +14,7 @@ app_name="$1"
 git_repo="$2"
 git_path="$3"
 git_rev="$4"
-timeout="${5:-15}"
+timeout="${5:-30}"
 
 echo "Creating Application $app_name on ArgoCD from $git_repo/$git_path - Revision $git_rev"
 
