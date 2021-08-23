@@ -27,7 +27,7 @@ This folder contains two folders:
 To deploy ACM using it, login with a cluster-admin user and run the bash script `deploy-acm-with-argo.sh`. Example:
 
 ```
-oc login https://api.ocp-3.sandbox708.opentlc.com:6443 -u admin -p XXXX
+oc login https://api.<ocp-domain>:6443 -u admin -p XXXX
 ./deploy-acm-with-argo.sh
 ```
 
